@@ -59,7 +59,7 @@
 
 @media only screen and (max-width: 574px){
     .container-informacoes{
-        height: 103vh;
+        max-height: 100vh;
     }
     .container-foto-animada{
         width: 100%;
