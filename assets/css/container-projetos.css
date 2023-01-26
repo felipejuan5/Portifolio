@@ -42,9 +42,13 @@
        top: 29px !important;
        height: 332px;
     }
+    .container-projetos{
+        max-height: 100vh;
+    }
 
 }
 @media only screen and (min-width: 551px) and (max-width: 950px){
+
     .projetos{
         width: 100%;
         margin-left: 0%;

@@ -95,7 +95,7 @@
    
     }
     .container-inicio .redes{
-        margin-top: 590px;
+        margin-top: 625px;
         margin-left: 20%;
     }
 
@@ -105,10 +105,14 @@
     .container-inicio{
         margin-top: -16px;
     }
+    .txt-apresentacao{
+        position: absolute;
+        margin-top: 12px;
+    }
 }
 @media only screen and (min-width: 551px) and (max-width: 950px){
     .container-inicio{
-        height: 102vh;
+        max-height: 100vh;
     }
     .container-foto img{
         margin-left: 3%;
