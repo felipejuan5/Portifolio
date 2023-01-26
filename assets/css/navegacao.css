@@ -1,0 +1,102 @@
+body{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto !important;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: slategray;
+}
+
+/* Navegação */
+.header-container{
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    top: 0%;
+    max-width: 1920px;
+    z-index: 1;
+    align-items: center;
+    display: flex;
+    justify-content: end;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.452);
+    background: rgba(196, 196, 196, 0.11);
+    backdrop-filter: blur(10px);
+}
+
+.header-container .navegacao{
+    float: right;
+    margin-right: 5%;
+}
+.header-container .navegacao a {
+    padding-right: 25px;
+    font-size: 25pt;
+    text-decoration: none;
+    color: #f3dec2;
+}
+.header-container .navegacao a:hover{
+    color: yellow;
+}
+
+.container{
+    width: 100%;
+}
+.header-container-mobile{
+    display: none;
+}
+.menu{
+    display: none;
+}
+
+@media only screen and (max-width: 575px){
+    .header-container{
+        display: none;
+    } 
+    .header-container-mobile button{
+        background: transparent;
+        border: none;
+    }
+    .menu{
+        width: 10%;
+        margin-left: 80%;
+        position: fixed;
+        z-index: 3;
+        display: block;
+    }
+    .closeMenu{
+        display: block;
+    }
+    .header-container-mobile{
+        display: block;
+        z-index: 5;
+        width: 0%;
+        height: 100vh;
+        margin-top: -16px;
+        background: rgb(146 118 171 / 53%);
+        backdrop-filter: blur(10px);
+        position: fixed;
+        overflow-x: hidden;
+        transition: all 0.5s;
+        
+    }
+    .header-container-mobile .navegacao{
+        display: grid;
+        font-size: 32pt;
+        margin: 0 auto;
+        align-items: center;
+        margin-top: 50%;
+        margin-left: 0%;
+        justify-content: center;
+    }
+    .header-container-mobile .navegacao a{
+        color: whitesmoke;
+        text-decoration: none;
+        padding-bottom: 11px;
+    }
+   
+}
+@media only screen and (min-width: 551px) and (max-width: 950px){
+    .container{
+        margin-top: -18px;
+    }
+}
+

@@ -1,0 +1,58 @@
+
+.container-projetos{
+    height: 100vh;
+    background-color: #5e5e66;
+    max-height: 730px;
+}
+
+.projetos{
+    max-width: 1000x;
+    width: 60%;
+    margin-left: 20%;
+}
+.projetos h1{
+    text-align: center;
+    color: antiquewhite;
+    font-size: 45pt;
+    padding-top: 90px;
+}
+.projetos-slider{
+    margin-top: 25px !important;
+
+}
+.projetos-slider .projetos{
+    width: 100%;
+    margin-left: 0px;
+}
+.global-projetos{
+    margin-top: -16px !important;
+}
+.slick-initialized .slick-slide{
+    text-decoration: none;
+}
+.projetos-slider p{
+    font-size: 32pt;
+    color: antiquewhite;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 550px){
+    .slick-track{
+       top: 29px !important;
+       height: 298px;
+    }
+
+}
+@media only screen and (min-width: 551px) and (max-width: 950px){
+    .projetos{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .projetos h1{
+        padding-top: 163px;
+    }
+    .projetos-slider{
+        padding-top: 50px;
+    }
+}

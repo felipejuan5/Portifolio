@@ -1,0 +1,124 @@
+.container-inicio{
+    height: 100vh;
+    background: linear-gradient(63.13deg, #300f2b 51.04%, #727283 51.05%);
+    max-height: 750px;
+
+}
+.container .apresentacao{
+     width: 50%;
+    position: absolute;
+    margin-top: 111px;
+    font-size: 28pt;
+    margin-left: 0%;
+    align-items: center; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 779px;
+    color: antiquewhite;
+}
+.meu-nome::after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+@keyframes pisca {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+.container-inicio .redes{
+    width: 50%;
+    margin-top: 360px;
+    position: absolute;
+    margin-left: 0%;
+    font-size: 38pt;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 779px;
+}
+
+.redes .linkedin{
+    border-radius: 20px;
+    width: 26%;
+    height: 50px;
+    font-size:18pt;
+    cursor: pointer;
+    background-color:#727283;
+    border: 2px solid #727283;
+    color: antiquewhite;
+    margin-left: 3%;
+}
+.redes .linkedin a{
+    text-decoration: none;
+    transition: ease-in-out 0.4s;
+    color: antiquewhite;
+}
+.redes .linkedin:hover{
+    letter-spacing: 5px;
+    transition: ease-in-out 0.4s;
+}
+.container-foto{
+    width: 50%;
+    float: right;
+}
+.container-foto img{
+    width: 350px;
+    border-radius: 200px;
+    margin-left: 26%;
+    margin-top: 96px;
+}
+/* Configurações media para celular  */
+@media only screen and (max-width: 574px){
+    .container-foto{
+        float: none;
+    }
+    .container-foto{
+        width: 100%;
+    }
+    .container-foto img{
+        margin-left: 1%;
+        margin-top: 10px;
+        width: 98%;
+    }
+    .container .apresentacao{
+        width: 100%;
+        margin-top: 400px;
+        font-size: 22pt;
+   
+    }
+    .container-inicio .redes{
+        margin-top: 590px;
+        margin-left: 20%;
+    }
+
+    .redes .linkedin{
+        width: 100%;
+    }
+    .container-inicio{
+        margin-top: -16px;
+    }
+}
+@media only screen and (min-width: 551px) and (max-width: 950px){
+    .container-foto img{
+        margin-left: 3%;
+        margin-top: 181px;
+    }
+    .container .apresentacao{
+        margin-top: 223px;
+        margin-left: 10px;
+    }
+    .container-inicio .redes{
+        margin-top: 510px;
+    }
+    .redes .linkedin{
+        width: 100%;
+    }
+}

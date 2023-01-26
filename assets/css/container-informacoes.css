@@ -1,0 +1,104 @@
+.container-informacoes{
+    height: 96vh;
+    max-height: 718px;
+}
+.name2{
+    white-space: nowrap;
+    text-align: center;
+}
+.name{
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+}
+
+.typing-animation{
+    animation: cursor 500ms steps(40)infinite normal, 
+               typing 4s steps(40) 1s normal both;
+}
+
+.container-informacoes{
+    background-color: #47474e;
+}
+.container-informacoes .sobre-mim{
+    color: antiquewhite;
+    position: inherit;
+    width: 40%;
+    float: right;
+    margin-right: 15%;
+    margin-top: -290px;
+    font-size: 25px;
+    text-indent: 30px;
+}
+.container-informacoes .sobre-mim h1{
+    text-indent: 0px;
+    font-size: 36pt;
+    padding-bottom:31px;
+}
+@keyframes desenhoAnimacao {
+    from {
+        top:-25px;
+    }
+    to {
+        top: 15px;
+    }
+}
+
+.container-foto-animada{
+    width: 50%;
+}
+.container-foto-animada img{
+    width: 350px;
+    border-radius: 200px;
+    margin-left: 26%;
+    margin-top: 100px;
+    animation: desenhoAnimacao 2.1s infinite alternate-reverse linear;
+    position: relative;
+}
+
+@media only screen and (max-width: 574px){
+    .container-informacoes{
+        height: 100vh;
+    }
+    .container-foto-animada{
+        width: 100%;
+    }
+    .container-foto-animada img{
+        margin-top: 31px;
+        margin-left: 1%;
+        width: 98%;
+    }
+    .container-informacoes .sobre-mim{
+        width: 96%;
+        margin-top: 25px;
+        font-size: 15pt;
+        float: none;
+        text-indent: 0px;
+        margin-left: 2%;
+    }
+    @keyframes desenhoAnimacao {
+        from {
+            top:-25px;
+        }
+        to {
+            top: 10px;
+        }
+    }
+}
+@media only screen and (min-width: 551px) and (max-width: 950px){
+    .container-foto-animada img{
+        margin-left: 2px;
+        margin-top: 191px;  
+    }
+    .container-informacoes .sobre-mim{
+        width: 48%;
+        margin-right: 5%;
+    }
+    .container-informacoes .sobre-mim h1{
+        padding-bottom: 31px;
+        margin-top: -29px;
+    }
+
+    }
+
