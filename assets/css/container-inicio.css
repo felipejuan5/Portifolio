@@ -107,6 +107,9 @@
     }
 }
 @media only screen and (min-width: 551px) and (max-width: 950px){
+    .container-inicio{
+        height: 102vh;
+    }
     .container-foto img{
         margin-left: 3%;
         margin-top: 181px;
