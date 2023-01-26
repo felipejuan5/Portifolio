@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja Bem Vindo!</title>
+     <!-- scripts -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Link css -->
+    <link rel="stylesheet" href="assets/css/navegacao.css">
+    <link rel="stylesheet" href="assets/css/container-inicio.css">
+    <link rel="stylesheet" href="assets/css/container-informacoes.css">
+    <link rel="stylesheet" href="assets/css/container-projetos.css">
+    <link rel="stylesheet" href="assets/css/container-habilidades.css">
+    <link rel="stylesheet" href="assets/css/container-footer.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="assets/css/reset.min.css">
+    <link rel="icon" type="image/x-icon" href="/assets/image/foto-animada.png" />
+
+</head>
+
+<body>
+    <header class="header-container">
+        <nav class="navegacao">
+            <a href="#inicio">Inicio</a>
+            <a href="#informacoes">Sobre mim</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#habilidades">Habilidades</a>
+            </nav>
+    </header>
+
+    <!-- Navegação mobile -->
+
+    <button class="headerButton" onclick="openMenu();" style="background: transparent;border: none;">
+        <img src="assets/image/menu-aberto.png" alt="Menu" class="menu">
+    </button> 
+
+
+    <div id="myNav" class="header-container-mobile">
+        <button class="headerButton" onclick="closeMenu();" style="background: transparent;border: none">
+            <img src="assets/image/menu-fechado.png" alt="Menu-Close" class="menu closeMenu">
+        </button> 
+        <nav class="navegacao">
+            <a href="#inicio">Inicio</a>
+            <a href="#informacoes">Sobre mim</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#habilidades">Habilidades</a>
+        </nav>
+
+    </div>
+
+    <main class="container">  
+        <div id="inicio" class="container-inicio">
+            <div class="apresentacao">
+                <p>Olá, eu sou  <br>
+                    <span style="display: inline; font-size: 40pt;" class="meu-nome">Juan Felipe.</span>
+                    <br />
+                    <!-- Desenvolvedor Full Stack -->
+                    E seja muito bem vindo ao <br>
+                    meu portifólio.
+                  </p>
+        
+              </div>            
+
+            <div class="redes">
+                <button class="linkedin"><a href="https://www.linkedin.com/in/juan-felipe-a85b05208/">Linkedin</a></button>
+                <button class="linkedin"><a href="https://github.com/felipejuan5">GitHub</a></button>
+            </div>
+
+            <div class="container-foto">
+                <img src="assets/image/foto-perfil.jpg" class="foto-perfil">
+            </div>
+        </div>
+
+        <div id="informacoes" class="container-informacoes">
+            <div class="container-foto-animada">
+                <img src="assets/image/foto-animada.png" class="foto-perfil-animada">
+            </div>
+            <div class="sobre-mim">
+                <h1>Sobre mim</h1>
+                <p>Meu nome é Juan Felipe e sou um entusiasta por tecnologia desde que me conheço, eu tomei a decisão de me aventurar no caminho da programação. Possuo experiencia em Desenvolvimentos front e back. Atualmente estou focando nas tecnologias voltadas ao FrontEnd.</p>
+            </div>
+
+        </div>
+
+        <div id="projetos" class="container-projetos">
+            <div class="projetos">    
+                <div class="global-page-container global-projetos">
+                    <h1>Projetos</h1>
+                    <div class="projetos-slider">
+
+                        <a class="slide" href="https://github.com/felipejuan5/Calculadora" target="_blank"> 
+                            <p>Calculadora</p>
+                            <img class="slide projetos" src="assets/image/calculadora.png" alt="Calculadora">
+                        </a>
+                        <a class="slide" href="https://github.com/felipejuan5/" target="_blank"> 
+                            <p>Em breve</p>
+                            <img class="slide projetos" src="assets/image/em-breve.png" alt="em-breve">
+                        </a>
+                        <a class="slide" href="https://github.com/felipejuan5/" target="_blank"> 
+                            <p>Em breve</p>
+                            <img class="slide projetos" src="assets/image/em-breve.png" alt="em-breve">
+                        </a>
+                        <a class="slide" href="https://github.com/felipejuan5/" target="_blank"> 
+                            <p>Em breve</p>
+                            <img class="slide projetos" src="assets/image/em-breve.png" alt="em-breve">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="habilidades" class="container-habilidades">
+            <div class="habilidades">
+            <div class="global-page-container"> 
+
+                <h1>Habilidades</h1>
+
+                <div class="habilidades-slider">
+                    
+                    <img data-name="HTML"   class="slide" src="assets/image/html-5.png" alt="html-5">
+                    <img data-name="CSS" class="slide" src="assets/image/css-3.png" alt="css-3">
+                    <img data-name="Java"   class="slide" src="assets/image/java.png" alt="java">
+                    <img data-name="Python" class="slide" src="assets/image/python.png" alt="python">
+                    <img data-name="Banco de dados" class="slide" src="assets/image/armazenamento-de-banco-de-dados.png" alt="banco-de-dados">
+                    <img data-name="Javacript" class="slide" src="assets/image/script-java.png" alt="javacript">
+                    <img data-name="Github" class="slide" src="assets/image/github.png" alt="github">
+                    <img data-name="C#" class="slide" src="assets/image/c++.png" alt="c">
+                    <img data-name="jQuery" class="slide" src="assets/image/jquery.png" alt="jquery">
+
+                </div>
+                <div id="habilidades-name" class="description"></div>
+            </div>
+        </div>
+        </div>
+        
+        <footer class="container-footer">
+            <div class="footer">
+                <p>E-mail para contato: juanfelipealtran@gmail.com<br>
+                Feito por Juan Felipe</p>
+            </div>
+        </footer>
+
+    </main>
+
+<script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="assets/js/maquina-de-escrever.js"></script>
+<script src="assets/js/carrousel.js"></script>
+<script src="assets/js/menu.js"></script>
+
+</body>
+</html>
